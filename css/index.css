@@ -1,3 +1,254 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+ /* --**--**----**--**----**--**--  */
+ /*  END CSS RESET */
+ /* --**--**----**--**----**--**--  */
+
+ /* BODY */
+body {
+	width: 880px;
+	margin: 0 auto;
+}
+
+/* NAV BAR */
+.container-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+	.container-nav nav {
+		flex-grow: 1;
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-right: 50px;
+	}
+
+/* HEADER */
+.container-header {
+	display:flex;
+	flex-direction: row;
+
+	margin-bottom: 50px;
+}
+
+	.container-header-left {
+		display: flex;
+		flex-direction: column;
+		
+		justify-content: center;
+		align-items: center;
+	}
+
+		.container-header-left h1 {
+			text-align: center;
+
+			font-size: 65px;
+		}
+
+		.container-header-left p {
+			padding: 10px 30px 10px 30px;
+			
+			border: 1px solid black;
+		}
+
+/* CONTENT 1 */
+.container-content-1 {
+	display:flex;
+	flex-direction: row;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+	.content-1-left {
+		width: 50%;
+	}
+
+	.content-1-right {
+		width: 50%;
+	}
+
+/* CONTENT 2 */
+.container-content-2 {
+	display:flex;
+	flex-direction: row;
+
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+
+	.content-2-left {
+		width: 33%;
+	}
+
+	.content-2-middle {
+		width: 33%;
+	}
+
+	.content-2-right {
+		width: 33%;	
+	}
+
+/* ADDRESS */
+footer address {
+	margin-top: 50px;
+}
+
+/* LEGAL */
+
+.legal {
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 75px;
+
+}
+
+/* -------------SERVICES PAGE ----------*/
+/* -------------SERVICES PAGE ----------*/
+/* -------------SERVICES PAGE ----------*/
+/* -------------SERVICES PAGE ----------*/
+/* -------------SERVICES PAGE ----------*/
+
+/* NAV - SERVICES */
+	/* See Above HTML */
+
+/* Services Header */
+.services-header {
+	margin: 25px 0px 25px 0px;
+	
+}
+
+/* Services Content */
+.container-services-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin: 25px 0px 25px 0px;
+
+	justify-content: space-between;
+}
+
+	.services-item {
+		display: flex;
+		flex-direction: column;
+
+		width: 430px;
+
+		padding: 25px;
+		margin: 10px 0px 10px 0px;
+		background-color: rgb(241, 241, 241);
+
+		border: 1px solid black;
+	}
+
+		.content-button-learnMore {
+			margin-top: 25px;
+			padding: 10px 5px 10px 5px;
+
+			width: 40%;
+
+			justify-content: flex-start;
+			text-align: center;
+
+			background-color: white;
+			border: 1px solid black;
+
+			
+
+		}
+
+		.content-button-learnMore:hover {
+			cursor: pointer;
+		}
+
+		
+
+/* Services Footer */
+.services-footer {
+	display: flex;
+	padding-top: 25px;
+	margin-bottom: 50px;
+}
+
+	.services-footer-container {
+		padding-right: 25px;
+	}
+	.services-footer-container li {
+		margin-top: 10px;
+		list-style-type: disc;
+		list-style-position: inside;
+	}
