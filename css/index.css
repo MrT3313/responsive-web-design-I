@@ -72,8 +72,9 @@ h1, h2, h3, h4, h5 {
 
  /* BODY */
 body {
-	width: 880px;
-	margin: 0 auto;
+	/* width: 880px; */
+    margin: 0 auto;
+    padding: 0px 25px 0px 25px;
 }
 
 /* NAV BAR */
@@ -98,7 +99,8 @@ body {
 /* HEADER */
 .container-header {
 	display:flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
 
 	margin-bottom: 50px;
 }
@@ -121,46 +123,49 @@ body {
 			padding: 10px 30px 10px 30px;
 			
 			border: 1px solid black;
-		}
+        }
+    
+    .container-header img {
+        display: flex;
+    }
 
 /* CONTENT 1 */
 .container-content-1 {
 	display:flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
 
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 	.content-1-left {
-		width: 50%;
+		width: 48%;
 	}
 
 	.content-1-right {
-		width: 50%;
+		width: 48%;
 	}
+
+/* img */
+body img  {
+    display: flex;
+    justify-content: center;
+}
 
 /* CONTENT 2 */
 .container-content-2 {
 	display:flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
 
 	margin-top:50px;
 	margin-bottom: 50px;
 }
 
-	.content-2-left {
-		width: 33%;
+	.content-2-left, .content-2-middle, .content-2-right {
+		width: 30%;
 	}
-
-	.content-2-middle {
-		width: 33%;
-	}
-
-	.content-2-right {
-		width: 33%;	
-	}
-
 /* ADDRESS */
 footer address {
 	margin-top: 50px;
@@ -251,4 +256,57 @@ footer address {
 		margin-top: 10px;
 		list-style-type: disc;
 		list-style-position: inside;
-	}
+    }
+    
+
+/* MEDIA QUERIES */
+/* --**--**--**-- */
+@media(max-width: 800px) {
+    /* NAV */
+    .container-nav {
+        /* border: 1px solid black;  */
+        flex-direction: column-reverse;
+    }
+        .container-nav img {
+            align-self: center;
+            margin-bottom: 40px;
+        }
+
+        .container-nav nav {
+            padding-right: 0;
+        }
+
+    /* HEADER */
+    .container-header img {
+        display: none;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+    body {
+        width: 490px;
+        margin: 0 auto;
+    }
+
+    /* NAV */
+    .container-nav nav {
+        flex-direction: column;
+
+    }
+
+    .container-nav img {
+        align-self: center;
+    }
+
+    /* CONTENT */
+    .container-content-1, .container-content-2 {
+        flex-direction: column;
+    }
+
+    .content-1-left, .content-1-right, .content-2-left, .content-2-middle, .content-2-right {
+        width: 100%;
+    }
+}
+
